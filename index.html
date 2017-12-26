@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>runningman</title>
+    <style>
+      #app{
+        background: #f5f5f5;
+      }
+      input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {
+        -webkit-text-fill-color: #ededed !important;
+        -webkit-box-shadow: 0 0 0px 1000px transparent  inset !important;
+        background-color:transparent;
+        background-image: none;
+        transition: background-color 50000s ease-in-out 0s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    document.getElementsByTagName('html')[0].style.fontSize=Math.min(document.documentElement.clientWidth,640)/20+'px';
+    window.addEventListener('resize', () => {
+      document.getElementsByTagName('html')[0].style.fontSize=Math.min(document.documentElement.clientWidth,640)/20+'px';
+    })
+  </script>
+</html>
